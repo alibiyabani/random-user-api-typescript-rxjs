@@ -1,0 +1,17 @@
+.app__footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+
+  span {
+    color: var(--white-color);
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-transform: capitalize;
+  }
+}

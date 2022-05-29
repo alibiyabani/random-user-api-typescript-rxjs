@@ -1,0 +1,27 @@
+.app__userInfo {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .title {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .info_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      text-transform: capitalize;
+    }
+
+    & > span:first-child {
+      width: 120px;
+      font-weight: 600;
+    }
+  }
+}

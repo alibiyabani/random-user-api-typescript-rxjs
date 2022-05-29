@@ -1,0 +1,57 @@
+.app__header {
+  display: flex;
+  height: 220px;
+  background-color: var(--secondary-color);
+  background-image: url("../../assets/image/banner-background.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+  position: relative;
+  background-size: auto;
+  border-radius: 15px;
+  padding: 3rem;
+
+  .image {
+    position: absolute;
+    top: 80%;
+    right: 7%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--white-color);
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      border: 3px solid var(--white-color);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media screen and (max-width: 700px) {
+      right: calc(100% / 2 - 50px);
+    }
+  }
+
+  .full_name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    span {
+      color: var(--white-color);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 700px) {
+      justify-content: center;
+      padding-left: 0;
+    }
+  }
+}

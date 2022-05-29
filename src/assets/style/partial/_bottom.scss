@@ -1,0 +1,21 @@
+.app__buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .primary {
+    padding: 0.9rem 2rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--secondary-color-hover);
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
