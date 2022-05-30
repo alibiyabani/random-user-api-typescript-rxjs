@@ -1,13 +1,10 @@
 import { FC } from 'react'
 import { useObservableState } from 'observable-hooks'
 import { rowUser$ } from '../services/store'
-
 import { Header, Footer, UserInfo, Spinner } from '../components'
-
 
 const HomePage: FC = () => {
     const user = useObservableState(rowUser$, [])
-
 
     if (user.length === 0) {
         return (
